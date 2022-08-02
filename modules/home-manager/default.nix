@@ -63,13 +63,6 @@ in
       # define package definitions for current user environment
       packages = with pkgs; [
         age
-        # python with default packages
-        (pkgs.python3.withPackages
-          (ps: with ps; [
-            numpy
-            scipy
-            networkx
-          ]))
         cachix
         comma
         curl
@@ -94,17 +87,14 @@ in
         nixfmt
         nixpkgs-fmt
         nodejs_latest
-        openjdk11
         openssh
         pandoc
         parallel
         pkgs.coreutils-full
-        poetry
         pre-commit
         neofetch
         ranger
         rclone
-        (pkgs.ruby.withPackages (ps: with ps; [ rufo solargraph ]))
         ripgrep
         rsync
         shellcheck
@@ -113,7 +103,6 @@ in
         tealdeer
         terraform
         treefmt
-        vagrant
         yarn
         yq-go
       ];

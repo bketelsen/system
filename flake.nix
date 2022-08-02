@@ -182,7 +182,7 @@
 
       homeConfigurations = {
         server = mkHomeConfig {
-          username = "kclejeune";
+          username = "bjk";
           extraModules = [ ./profiles/home-manager/personal.nix ];
         };
         darwinServer = mkHomeConfig {
