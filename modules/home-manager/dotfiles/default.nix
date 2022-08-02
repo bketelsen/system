@@ -30,6 +30,16 @@
       source = ./yabai;
       recursive = true;
     };
+  nvim = {
+
+    recursive=true;
+  source = pkgs.fetchFromGitHub {
+     owner = "AstroNvim";
+     repo = "AstroNvim";
+     rev = "5dfeb77";
+     sha256 = "sha256-c1FiKkVI9mQmo+ZSqt3GEP9uuITVbtwr800kBHLe1Jg=";
+  };
+  };
     # kitty = lib.mkIf pkgs.stdenvNoCC.isDarwin {
     #   source = ./kitty;
     #   recursive = true;

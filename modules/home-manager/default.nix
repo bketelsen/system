@@ -14,7 +14,6 @@ let
 in
 {
   imports = [
-    ./nvim
     ./cli
     ./kitty
     ./dotfiles
@@ -83,6 +82,7 @@ in
         kubernetes-helm
         luajit
         mmv
+        neovim
         nix
         nixfmt
         nixpkgs-fmt
