@@ -15,7 +15,6 @@ in
 {
   imports = [
     ./cli
-    ./kitty
     ./dotfiles
     ./git.nix
     ./1password
