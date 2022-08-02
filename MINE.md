@@ -20,9 +20,9 @@ mac/linux workstation setup
 
 ## Port Status
 
-[-] Home Manager Linux
-    [ ] neovim from AstroVim
-[ ] Home Manager Darwin
-[ ] NixOS System(s)
-[ ] Cloud Instances
-[ ] Development VM
+* [-] Home Manager Linux
+* *  [ ] neovim from AstroVim
+* [ ] Home Manager Darwin
+* [ ] NixOS System(s)
+* [ ] Cloud Instances
+* [ ] Development VM
