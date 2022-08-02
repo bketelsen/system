@@ -144,26 +144,13 @@
       );
 
       darwinConfigurations = {
-        randall = mkDarwinConfig {
+        chapterhouse = mkDarwinConfig {
           extraModules = [
             ./profiles/personal.nix
             ./modules/darwin/apps.nix
           ];
         };
         work = mkDarwinConfig {
-          extraModules = [
-            ./profiles/work.nix
-          ];
-        };
-        randall-intel = mkDarwinConfig {
-          system = "x86_64-darwin";
-          extraModules = [
-            ./profiles/personal.nix
-            ./modules/darwin/apps.nix
-          ];
-        };
-        work-intel = mkDarwinConfig {
-          system = "x86_64-darwin";
           extraModules = [
             ./profiles/work.nix
           ];
@@ -185,23 +172,15 @@
           username = "bjk";
           extraModules = [ ./profiles/home-manager/personal.nix ];
         };
-        darwinServer = mkHomeConfig {
-          username = "kclejeune";
-          system = "x86_64-darwin";
-          extraModules = [ ./profiles/home-manager/personal.nix ];
-        };
-        darwinServerM1 = mkHomeConfig {
-          username = "kclejeune";
+        homeServerM1 = mkHomeConfig {
+          username = "bjk";
           system = "aarch64-darwin";
           extraModules = [ ./profiles/home-manager/personal.nix ];
         };
-        workServer = mkHomeConfig {
-          username = "lejeukc1";
+        workServerM1 = mkHomeConfig {
+          username = "brianjk";
+          system = "aarch64-darwin";
           extraModules = [ ./profiles/home-manager/work.nix ];
-        };
-        vagrant = mkHomeConfig {
-          username = "vagrant";
-          extraModules = [ ./profiles/home-manager/personal.nix ];
         };
       };
 
