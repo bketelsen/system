@@ -125,9 +125,9 @@
             name = system;
             value = {
               darwin =
-                self.darwinConfigurations.randall-intel.config.system.build.toplevel;
+                self.darwinConfigurations.chapterhouse.config.system.build.toplevel;
               darwinServer =
-                self.homeConfigurations.darwinServer.activationPackage;
+                self.homeConfigurations.homeServerM1.activationPackage;
             };
           })
           nixpkgs.lib.platforms.darwin) ++
