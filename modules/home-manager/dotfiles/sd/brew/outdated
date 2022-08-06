@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# list outdated brew packages
+#
+#	sd brew outdated
+
+
+set -euo pipefail
+
+brew outdated

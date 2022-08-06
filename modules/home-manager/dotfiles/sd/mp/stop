@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# stop multipass instance
+#
+#	sd mp stop <instance>
+
+
+set -euo pipefail
+
+multipass stop $1

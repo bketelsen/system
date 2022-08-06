@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# update & upgrade homebrew
+#
+#	sd brew up
+
+
+set -euo pipefail
+
+brew update && brew upgrade

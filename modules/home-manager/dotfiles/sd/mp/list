@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# list multipass instances
+#
+#	sd mp list
+
+
+set -euo pipefail
+
+multipass list

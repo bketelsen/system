@@ -91,6 +91,7 @@ in
         pkgs.coreutils-full
         pre-commit
         neofetch
+        nix-prefetch
         rclone
         ripgrep
         rsync

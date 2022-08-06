@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# purge deleted multipass instances
+#
+#	sd mp purge
+
+
+set -euo pipefail
+
+multipass purge

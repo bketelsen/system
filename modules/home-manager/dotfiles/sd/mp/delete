@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# delete multipass instance
+#
+#	sd mp delete <instance>
+
+
+set -euo pipefail
+
+multipass delete $1

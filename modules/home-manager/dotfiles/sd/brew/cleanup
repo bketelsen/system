@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# cleanup homebrew
+#
+#	sd brew cleanup
+
+
+set -euo pipefail
+
+brew cleanup

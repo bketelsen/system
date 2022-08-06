@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# edit your dotfiles
+#
+#	sd dotfiles edit
+
+
+set -euo pipefail
+
+cd ~/dotcloud && nvim .
