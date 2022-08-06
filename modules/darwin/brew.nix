@@ -24,15 +24,12 @@
       "teamookla/speedtest"
     ];
     casks = [
-      "1password"
       "1password-cli"
       "alt-tab"
       "appcleaner"
       "bartender"
-      "docker"
       "firefox-developer-edition"
       "fork"
-      "google-chrome"
       "gpg-suite"
       "hot"
       "kitty"
@@ -40,7 +37,6 @@
       "raycast"
       "stats"
       "utm"
-      "visual-studio-code"
     ];
   };
 }

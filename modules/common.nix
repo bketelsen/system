@@ -57,8 +57,4 @@
     shells = with pkgs; [ bash zsh fish ];
   };
 
-  fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs; [ jetbrains-mono ];
-  };
 }

@@ -64,7 +64,7 @@
       # delay before repeating keystrokes
       InitialKeyRepeat = 10;
       # delay between repeated keystrokes upon holding a key
-      KeyRepeat = 10;
+      KeyRepeat = 20;
       AppleShowAllExtensions = true;
       AppleShowScrollBars = "Automatic";
     };
