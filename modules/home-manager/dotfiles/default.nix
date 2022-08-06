@@ -10,11 +10,9 @@
       target = "sd";
       recursive = true;
     };
-
     sd = {
       recursive = true;
       target = ".sd";
-
       source = pkgs.fetchFromGitHub {
         owner = "ianthehenry";
         repo = "sd";

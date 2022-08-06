@@ -30,7 +30,10 @@ in
   };
 
   home =
-    let NODE_GLOBAL = "${config.home.homeDirectory}/.node-packages";
+    let
+      NODE_GLOBAL = "${config.home.homeDirectory}/.node-packages";
+      SD_GLOBAL = "${config.home.homeDirectory}/.sd";
+
     in
     {
       # This value determines the Home Manager release that your
@@ -56,6 +59,8 @@ in
       sessionPath = [
         "${NODE_GLOBAL}/bin"
         "${config.home.homeDirectory}/.rd/bin"
+        "${config.home.homeDirectory}/.sd"
+
       ];
 
       # define package definitions for current user environment
