@@ -34,18 +34,13 @@
       "fork"
       "google-chrome"
       "gpg-suite"
-      "hammerspoon"
       "hot"
-      "iina"
-      "intellij-idea"
-      "jetbrains-toolbox"
       "kitty"
       "obsidian"
       "raycast"
       "stats"
       "utm"
       "visual-studio-code"
-      "zotero"
     ];
   };
 }

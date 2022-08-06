@@ -67,7 +67,6 @@ in
         fd
         ffmpeg
         gawk
-        ghc
         git
         gnugrep
         gnupg
@@ -92,7 +91,6 @@ in
         pkgs.coreutils-full
         pre-commit
         neofetch
-        ranger
         rclone
         ripgrep
         rsync
