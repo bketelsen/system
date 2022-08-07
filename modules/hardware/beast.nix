@@ -4,7 +4,6 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports = [  ];
   imports =
     [ # Include the results of the hardware scan.
       (modulesPath + "/installer/scan/not-detected.nix")
