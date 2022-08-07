@@ -10,12 +10,7 @@
     dataDir = config.user.home;
   };
 
-  nix = {
-    package = pkgs.nixFlakes;
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
-   };
+
 
   environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
 
