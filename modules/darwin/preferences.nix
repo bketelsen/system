@@ -12,7 +12,10 @@
     finder = {
       AppleShowAllExtensions = true;
       FXEnableExtensionChangeWarning = true;
+      FXPreferredViewStyle = "Nlsv";
       _FXShowPosixPathInTitle = true;
+      ShowPathbar = true;
+      ShowStatusBar = true;
     };
 
     # trackpad settings
@@ -27,6 +30,9 @@
       SecondClickThreshold = 1;
       # don't allow positional right click
       TrackpadRightClick = false;
+
+      # enable secondary click
+      EnableSecondaryClick = true; 
       # three finger drag for space switching
       # TrackpadThreeFingerDrag = true;
     };
@@ -34,7 +40,7 @@
     # firewall settings
     alf = {
       # 0 = disabled 1 = enabled 2 = blocks all connections except for essential services
-      globalstate = 1;
+      globalstate = 0;
       loggingenabled = 0;
       stealthenabled = 1;
     };
@@ -62,7 +68,7 @@
       # allow key repeat
       ApplePressAndHoldEnabled = false;
       # delay before repeating keystrokes
-      InitialKeyRepeat = 10;
+      InitialKeyRepeat = 15;
       # delay between repeated keystrokes upon holding a key
       KeyRepeat = 4;
       AppleShowAllExtensions = true;

@@ -51,16 +51,13 @@ in
         VISUAL = "nvim";
         CLICOLOR = 1;
         LSCOLORS = "ExFxBxDxCxegedabagacad";
-        KAGGLE_CONFIG_DIR = "${config.xdg.configHome}/kaggle";
-        JAVA_HOME = "${pkgs.openjdk11.home}";
         NODE_PATH = "${NODE_GLOBAL}/lib";
         # HOMEBREW_NO_AUTO_UPDATE = 1;
       };
       sessionPath = [
+        "${config.home.homeDirectory}/bin"
         "${NODE_GLOBAL}/bin"
-        "${config.home.homeDirectory}/.rd/bin"
         "${config.home.homeDirectory}/.sd"
-
       ];
 
       # define package definitions for current user environment
