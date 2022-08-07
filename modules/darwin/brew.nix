@@ -20,7 +20,6 @@
       "homebrew/cask-versions"
       "homebrew/core"
       "homebrew/services"
-      "jarred-sumner/git-peek"
       "koekeishiya/formulae"
       "teamookla/speedtest"
 
@@ -31,7 +30,6 @@
       "appcleaner"
       "bartender"
       "firefox-developer-edition"
-      "git-peek"
       "gpg-suite"
       "kitty"
       "obsidian"
