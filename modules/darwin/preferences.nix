@@ -32,7 +32,6 @@
       TrackpadRightClick = false;
 
       # enable secondary click
-      EnableSecondaryClick = true; 
       # three finger drag for space switching
       # TrackpadThreeFingerDrag = true;
     };
