@@ -46,8 +46,8 @@
 
   # Set your time zone.
   # time.timeZone = "EST";
-  services.geoclue2.enable = true;
-  services.localtimed.enable = true;
+  #services.geoclue2.enable = true;
+  #services.localtimed.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
