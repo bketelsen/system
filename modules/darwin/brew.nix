@@ -20,8 +20,10 @@
       "homebrew/cask-versions"
       "homebrew/core"
       "homebrew/services"
+      "jarred-sumner/git-peek"
       "koekeishiya/formulae"
       "teamookla/speedtest"
+
     ];
     casks = [
       "1password-cli"
@@ -29,14 +31,12 @@
       "appcleaner"
       "bartender"
       "firefox-developer-edition"
-      "fork"
+      "git-peek"
       "gpg-suite"
-      "hot"
       "kitty"
       "obsidian"
       "raycast"
       "stats"
-      "utm"
     ];
   };
 }
