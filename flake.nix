@@ -136,7 +136,7 @@
           (system: {
             name = system;
             value = {
-              nixos = self.nixosConfigurations.phil.config.system.build.toplevel;
+              nixos = self.nixosConfigurations.beast.config.system.build.toplevel;
               server = self.homeConfigurations.server.activationPackage;
             };
           })
@@ -158,10 +158,9 @@
       };
 
       nixosConfigurations = {
-        phil = mkNixosConfig {
+        beast = mkNixosConfig {
           hardwareModules = [
-            ./modules/hardware/phil.nix
-            inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t460s
+            ./modules/hardware/beast.nix
           ];
           extraModules = [ ./profiles/personal.nix ];
         };
