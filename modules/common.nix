@@ -13,7 +13,6 @@
         if pkgs.stdenvNoCC.isDarwin then "/Users" else "/home"
       }/${config.user.name}";
     shell = pkgs.zsh;
-    initialHashedPassword = "$6$TtE9/bf6HWe9wRob$jK6WRTN7FmYxd2JgA5x4Q8LdU.D4dBiaqxaY5/6hzyvNAaIAQcUUmsGALN.rX9iLirTkIJz11N6L.armdxr8H.";
   };
 
   # bootstrap home manager using system config

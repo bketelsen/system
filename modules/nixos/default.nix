@@ -27,7 +27,7 @@
         extraGroups =
           [ "wheel" "networkmanager" "lxd"]; # Enable ‘sudo’ for the user.
         hashedPassword =
-          "$6$1kR9R2U/NA0.$thN8N2sTo7odYaoLhipeuu5Ic4CS7hKDt1Q6ClP9y0I3eVMaFmo.dZNpPfdwNitkElkaLwDVsGpDuM2SO2GqP/";
+          "$6$9WbAMICpXIHb7uuw$cI3/9WhKFWN0/ATSfMwhpQVib5jVWgBmjMaAWgHcO33tvXWFpg2Pg.epG6gz0mhOgVn2vkYgNO.XepgAXIYBK.";
       };
     };
   };

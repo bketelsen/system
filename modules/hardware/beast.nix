@@ -54,7 +54,13 @@
 
   swapDevices = [ ];
 
-  networking.useDHCP = lib.mkDefault true;
+  networking.interfaces.enp5s0.useDHCP = true;
+  networking.interfaces.br0.useDHCP = true;
+  networking.bridges = {
+  "br0" = {
+    interfaces = [ "enp6s0" ];
+  };
+  };
 
 
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
