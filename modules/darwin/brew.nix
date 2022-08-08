@@ -32,6 +32,7 @@
       "firefox-developer-edition"
       "gpg-suite"
       "kitty"
+      "lxc"
       "obsidian"
       "raycast"
       "stats"
