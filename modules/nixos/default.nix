@@ -8,7 +8,7 @@
     group = "users";
     openDefaultPorts = true;
     dataDir = config.user.home;
-    guiAddress = "0.0.0.0:8384"
+    guiAddress = "0.0.0.0:8384";
   };
 
   virtualisation.lxd.enable = true;
