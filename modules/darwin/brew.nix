@@ -8,6 +8,7 @@
     };
     brews = [
       "awscli"
+      "lxc"
     ];
 
     taps = [
@@ -32,7 +33,6 @@
       "firefox-developer-edition"
       "gpg-suite"
       "kitty"
-      "lxc"
       "obsidian"
       "raycast"
       "stats"
