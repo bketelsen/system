@@ -11,7 +11,17 @@
     guiAddress = "0.0.0.0:8384";
   };
 
-  virtualisation.lxd.enable = true;
+  virtualisation = {
+  lxd = {
+    enable = true;
+    zfsSupport = true;
+    recommendedSysctlSettings = true;
+  };
+  lxc = {
+    enable = true;
+    lxcfs.enable = true; 
+  };
+  };
 
 
   environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
