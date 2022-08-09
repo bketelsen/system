@@ -65,21 +65,6 @@
       options = [ "bind" ];
     };
 
-    fileSystems."/var/lib/lxcfs" =
-    { device = "lxcfs";
-      fsType = "fuse.lxcfs";
-    };
-
-  fileSystems."/var/lib/lxd/shmounts" =
-    { device = "tmpfs";
-      fsType = "tmpfs";
-    };
-
-  fileSystems."/var/lib/lxd/devlxd" =
-    { device = "tmpfs";
-      fsType = "tmpfs";
-    };
-
 
   swapDevices = [ ];
 
