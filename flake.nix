@@ -25,6 +25,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     small.url = "github:nixos/nixpkgs/nixos-unstable-small";
 
+
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
@@ -162,7 +163,9 @@
           hardwareModules = [
             ./modules/hardware/beast.nix
           ];
-          extraModules = [ ./profiles/personal.nix ];
+          extraModules = [ 
+            ./profiles/personal.nix 
+          ];
         };
       };
 
