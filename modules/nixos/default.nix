@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
   # bundles essential nixos modules
   imports = [ ../common.nix ];
 
@@ -24,7 +24,7 @@
   };
 
 
-  environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
+  environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks inputs.nixos-shell.defaultPackage.${system}];
 
   hm = { pkgs, ... }: { imports = [  ]; };
 

@@ -24,6 +24,7 @@
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     small.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    nixos-shell.url = "github:Mic92/nixos-shell";
 
     flake-compat = {
       url = "github:edolstra/flake-compat";
