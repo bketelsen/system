@@ -1,6 +1,9 @@
 { config, pkgs, inputs, ... }: {
   # bundles essential nixos modules
-  imports = [ ../common.nix ];
+  imports = [ 
+    ../common.nix 
+    "${fetchTarball "https://github.com/msteen/nixos-vscode-server/tarball/master"}/modules/vscode-server/home.nix"
+  ];
 
   services.syncthing = {
     enable = true;
@@ -10,6 +13,11 @@
     dataDir = config.user.home;
     guiAddress = "0.0.0.0:8384";
   };
+
+  # enable vs-code server support
+  # https://github.com/msteen/nixos-vscode-server
+  services.vscode-server.enable = true;
+
 
   virtualisation = {
   lxd = {
