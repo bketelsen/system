@@ -24,7 +24,7 @@
   };
 
 
-  environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks inputs.nixos-shell.defaultPackage.${system}];
+  environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
 
   hm = { pkgs, ... }: { imports = [  ]; };
 
