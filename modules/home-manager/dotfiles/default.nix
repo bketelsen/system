@@ -37,7 +37,7 @@
         owner = "AstroNvim";
         repo = "AstroNvim";
         rev = "3fa14a0";
-        sha256 = "sha256-c1FiKkVI9mQmo+ZSqt3GEP9uuITVbtwr800kBHLe1Jg=";
+        sha256 = "sha256-+jCoSx9EBLvhY9Zz41Y6cCmrSSI66Fud8rzslELOtfs=";
       };
     };
   };
