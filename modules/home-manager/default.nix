@@ -85,6 +85,7 @@ in
         neovim
         nix
         nixfmt
+        nixops
         nixpkgs-fmt
         nodejs_latest
         openssh
