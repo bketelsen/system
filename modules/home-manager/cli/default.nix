@@ -133,11 +133,6 @@ in
       package = pkgs.starship;
       settings = {
         add_newline = true;
-
-        character = {
-          success_symbol = "[➜](bold green)";
-          error_symbol = "[➜](bold red)";
-        };
         hostname = {
           ssh_only = false;
           disabled = false;
