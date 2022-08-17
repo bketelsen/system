@@ -138,6 +138,10 @@ in
           success_symbol = "[➜](bold green)";
           error_symbol = "[➜](bold red)";
         };
+        hostname = {
+          ssh_only = false;
+          disabled = false;
+        };
 
         # package.disabled = true;
       };
