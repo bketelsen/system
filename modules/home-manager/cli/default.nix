@@ -136,7 +136,7 @@ in
         hostname = {
           ssh_only = false;
           ssh_symbol = "📡";
-          format = "[$ssh_symbol] on [$hostname](bold red) ";
+          format = "[$ssh_symbol$hostname]($style) in ";
           disabled = false;
         };
         golang = {
