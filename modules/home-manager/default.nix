@@ -22,6 +22,7 @@ in
 
   nixpkgs.config = {
     allowUnfree = true;
+
   };
 
   programs.home-manager = {
@@ -85,7 +86,6 @@ in
         neovim
         nix
         nixfmt
-        nixops
         nixpkgs-fmt
         nodejs_latest
         openssh
