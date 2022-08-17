@@ -7,4 +7,5 @@
 
 set -euo pipefail
 
-sudo apt update && sudo apt upgrade
+type apt > /dev/null && sudo apt update && sudo apt upgrade
+type brew > /dev/null && brew update && brew upgrade
