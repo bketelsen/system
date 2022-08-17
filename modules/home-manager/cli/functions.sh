@@ -1,3 +1,7 @@
+function coderssh() {
+    type coder > /dev/null && coder config-ssh --ssh-config-file ~/.ssh/config.d/coder
+}
+
 function mkvenv() {
     if [[ -z "$1" ]]; then
         DIR="venv"
