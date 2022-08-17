@@ -135,7 +135,17 @@ in
         add_newline = true;
         hostname = {
           ssh_only = false;
+          format = "[$ssh_symbol](bold blue) on [$hostname](bold red) ";
           disabled = false;
+        };
+        golang = {
+          symbol = " ";
+        };
+        nix_shell = {
+          symbol = " ";
+        };
+        rust = {
+          symbol = " ";
         };
 
         # package.disabled = true;
