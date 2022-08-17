@@ -134,14 +134,14 @@ in
       settings = {
         add_newline = true;
 
-       character = {
-         success_symbol = "[➜](bold green)";
-         error_symbol = "[➜](bold red)";
-       };
+        character = {
+          success_symbol = "[➜](bold green)";
+          error_symbol = "[➜](bold red)";
+        };
 
-      # package.disabled = true;
-    };
-  };
+        # package.disabled = true;
+      };
     };
   };
 }
+
