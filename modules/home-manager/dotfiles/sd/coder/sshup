@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# update your ssh config
+#
+#	sd coder sshup
+
+
+set -euo pipefail
+
+type coder > /dev/null && coder config-ssh -y --ssh-config-file ~/.ssh/config.d/coder

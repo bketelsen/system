@@ -1,5 +1,5 @@
 function coderssh() {
-    type coder > /dev/null && coder config-ssh --ssh-config-file ~/.ssh/config.d/coder
+    type coder > /dev/null && coder config-ssh -y --ssh-config-file ~/.ssh/config.d/coder
 }
 
 function mkvenv() {
