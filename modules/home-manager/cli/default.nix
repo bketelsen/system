@@ -135,6 +135,7 @@ in
         add_newline = true;
         hostname = {
           ssh_only = false;
+          ssh_symbol = "📡";
           format = "[$ssh_symbol](bold blue) on [$hostname](bold red) ";
           disabled = false;
         };
