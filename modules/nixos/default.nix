@@ -15,7 +15,6 @@
 
   # enable vs-code server support
   # https://github.com/msteen/nixos-vscode-server
-  services.vscode-server.enable = true;
 
 
   virtualisation = {
