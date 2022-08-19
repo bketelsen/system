@@ -15,7 +15,7 @@
 
   services.tailscale = {
     enable = true;
-  }
+  };
   # enable vs-code server support
   # https://github.com/msteen/nixos-vscode-server
 
