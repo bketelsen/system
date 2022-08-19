@@ -143,6 +143,7 @@
           })
           nixpkgs.lib.platforms.linux)
       );
+      formatter.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixpkgs-fmt;
 
       darwinConfigurations = {
         chapterhouse = mkDarwinConfig {
@@ -163,8 +164,8 @@
           hardwareModules = [
             ./modules/hardware/beast.nix
           ];
-          extraModules = [ 
-            ./profiles/personal.nix 
+          extraModules = [
+            ./profiles/personal.nix
           ];
         };
       };

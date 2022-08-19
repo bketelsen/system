@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }: {
   # bundles essential nixos modules
-  imports = [ 
-    ../common.nix 
+  imports = [
+    ../common.nix
   ];
 
   services.syncthing = {
@@ -21,24 +21,24 @@
 
 
   virtualisation = {
-  lxd = {
-    enable = true;
-    zfsSupport = true;
-    recommendedSysctlSettings = true;
-  };
-  lxc = {
-    enable = true;
-    lxcfs.enable = true; 
-  };
-  docker = {
-    enable = true;
-  };
+    lxd = {
+      enable = true;
+      zfsSupport = true;
+      recommendedSysctlSettings = true;
+    };
+    lxc = {
+      enable = true;
+      lxcfs.enable = true;
+    };
+    docker = {
+      enable = true;
+    };
   };
 
 
   environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
 
-  hm = { pkgs, ... }: { imports = [  ]; };
+  hm = { pkgs, ... }: { imports = [ ]; };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
@@ -48,7 +48,7 @@
       "${config.user.name}" = {
         isNormalUser = true;
         extraGroups =
-          [ "wheel" "networkmanager" "lxd"]; # Enable ‘sudo’ for the user.
+          [ "wheel" "networkmanager" "lxd" ]; # Enable ‘sudo’ for the user.
         hashedPassword =
           "$6$9WbAMICpXIHb7uuw$cI3/9WhKFWN0/ATSfMwhpQVib5jVWgBmjMaAWgHcO33tvXWFpg2Pg.epG6gz0mhOgVn2vkYgNO.XepgAXIYBK.";
       };
