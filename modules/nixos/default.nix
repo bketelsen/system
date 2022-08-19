@@ -13,6 +13,9 @@
     guiAddress = "0.0.0.0:8384";
   };
 
+  services.tailscale = {
+    enable = true;
+  }
   # enable vs-code server support
   # https://github.com/msteen/nixos-vscode-server
 
@@ -29,15 +32,6 @@
   };
   docker = {
     enable = true;
-  };
-  oci-containers = {
-    backend = "docker";
-    containers = {
-      nginx = {
-        image = "nginx";
-        autoStart = true;
-      };
-    };
   };
   };
 
