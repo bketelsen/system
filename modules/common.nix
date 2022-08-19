@@ -12,6 +12,7 @@
     home = "${
         if pkgs.stdenvNoCC.isDarwin then "/Users" else "/home"
       }/${config.user.name}";
+    extraGroups = [ "docker" ];
     shell = pkgs.zsh;
   };
 

@@ -27,6 +27,18 @@
     enable = true;
     lxcfs.enable = true; 
   };
+  docker = {
+    enable = true;
+  };
+  oci-containers = {
+    backend = "docker";
+    containers = {
+      nginx = {
+        image = "nginx";
+        autoStart = true;
+      };
+    };
+  };
   };
 
 
