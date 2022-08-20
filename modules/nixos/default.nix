@@ -39,7 +39,7 @@ fonts.fonts = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
 ];
 
-  environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
+  environment.systemPackages = with pkgs; [ unzip vscode firefox gnome.gnome-tweaks ];
 
   hm = { pkgs, ... }: { imports = [ ]; };
 
