@@ -9,6 +9,7 @@
       # Include the results of the hardware scan.
       (modulesPath + "/installer/scan/not-detected.nix")
       ./zfs.nix
+      ./sway.nix
     ];
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
