@@ -35,6 +35,9 @@
     };
   };
 
+fonts.fonts = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+];
 
   environment.systemPackages = with pkgs; [ vscode firefox gnome.gnome-tweaks ];
 
