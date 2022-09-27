@@ -25,9 +25,6 @@ in
 
   };
   fonts.fontconfig.enable = true;
-  home.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
 
   programs.home-manager = {
     enable = true;
@@ -88,6 +85,7 @@ in
         luajit
         mmv
         neovim
+        (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
         nix
         nixfmt
         nixpkgs-fmt
