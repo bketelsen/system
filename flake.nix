@@ -149,7 +149,7 @@
         chapterhouse = mkDarwinConfig {
           extraModules = [
             ./profiles/personal.nix
-            ./modules/darwin/apps.nix
+    #        ./modules/darwin/apps.nix
           ];
         };
         work = mkDarwinConfig {
