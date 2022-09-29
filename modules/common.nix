@@ -46,6 +46,7 @@
       ripgrep
 
       # lxd
+      gcc
       lxd
       
       # languages
