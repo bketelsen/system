@@ -168,6 +168,14 @@
             ./profiles/personal.nix
           ];
         };
+        kaitain = mkNixosConfig {
+          hardwareModules = [
+            ./modules/hardware/kaitain.nix
+          ];
+          extraModules = [
+            ./profiles/personal.nix
+          ];
+        };
       };
 
       homeConfigurations = {
