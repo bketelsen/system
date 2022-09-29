@@ -33,6 +33,7 @@
       # editors
       neovim
 
+
       # standard toolset
       coreutils-full
       curl

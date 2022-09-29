@@ -13,8 +13,6 @@
 
     taps = [
       "1password/tap"
-      "beeftornado/rmtree"
-      "cloudflare/cloudflare"
       "homebrew/bundle"
       "homebrew/cask"
       "homebrew/cask-fonts"
@@ -22,19 +20,12 @@
       "homebrew/core"
       "homebrew/services"
       "koekeishiya/formulae"
-      "teamookla/speedtest"
-
     ];
     casks = [
       "1password-cli"
-      "alt-tab"
       "appcleaner"
-      "bartender"
       "firefox-developer-edition"
       "gpg-suite"
-      "kitty"
-      "obsidian"
-      "raycast"
       "stats"
     ];
   };

@@ -55,7 +55,7 @@
       tilesize = 50;
       static-only = false;
       showhidden = false;
-      show-recents = false;
+      show-recents = true;
       show-process-indicators = true;
       orientation = "bottom";
       mru-spaces = false;

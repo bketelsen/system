@@ -2,8 +2,8 @@
   imports = [
     ../common.nix
     ./core.nix
-  #  ./brew.nix
+    ./brew.nix
     ./preferences.nix
-   ./syncthing.nix
+    ./syncthing.nix
   ];
 }

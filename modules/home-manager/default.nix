@@ -82,9 +82,10 @@ in
         jq
         kubectl
         kubernetes-helm
+        lazygit
         luajit
         mmv
-        neovim
+        ncdu
         (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
         nix
         nixfmt
