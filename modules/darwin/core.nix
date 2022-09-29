@@ -31,8 +31,8 @@ in
   services.syncthing = {
 
     enable = true;
-    logDir = "${config.hm.homeDir}/Library/Logs";
-    homeDir = "${config.hm.homeDir}";
+    logDir = "${config.home.homeDirectory}/Library/Logs";
+    homeDir = "${config.home.homeDirectory}";
   };
 
   # Used for backwards compatibility, please read the changelog before changing.
