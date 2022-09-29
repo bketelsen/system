@@ -32,8 +32,7 @@
     systemPackages = with pkgs; [
       # editors
       neovim
-
-
+      caddy
       # standard toolset
       coreutils-full
       curl
