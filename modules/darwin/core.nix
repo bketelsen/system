@@ -2,7 +2,7 @@
 let
   prefix = "/run/current-system/sw/bin";
   inherit (pkgs.stdenvNoCC) isAarch64 isAarch32;
-  homeDir = users.users.${config.user.name}.home;
+  homeDir = config.users.users.${config.user.name}.home;
 in
 {
   # environment setup
