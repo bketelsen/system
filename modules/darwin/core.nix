@@ -2,6 +2,7 @@
 let
   prefix = "/run/current-system/sw/bin";
   inherit (pkgs.stdenvNoCC) isAarch64 isAarch32;
+  homeDir = users.users.${config.user.name}.home
 in
 {
   # environment setup
@@ -28,11 +29,12 @@ in
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
+  let hm
   services.syncthing = {
 
     enable = true;
-    logDir = "/Users/bjk/Library/Logs";
-    homeDir = "/Users/bjk";
+    logDir = "${homeDir}/Library/Logs";
+    homeDir = "${homeDir}";
   };
 
   # Used for backwards compatibility, please read the changelog before changing.
