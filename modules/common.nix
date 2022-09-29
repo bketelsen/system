@@ -44,10 +44,6 @@
       bat
       fzf
       ripgrep
-
-      # lxd
-      gcc
-      lxd
       
       # languages
       python3
