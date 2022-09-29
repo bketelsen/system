@@ -29,10 +29,7 @@ in
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
   services.syncthing = {
-
     enable = true;
-    logDir = "${config.home.homeDirectory}/Library/Logs";
-    homeDir = "${config.home.homeDirectory}";
   };
 
   # Used for backwards compatibility, please read the changelog before changing.
