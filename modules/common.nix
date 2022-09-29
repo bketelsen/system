@@ -45,6 +45,9 @@
       fzf
       ripgrep
 
+      # lxd
+      lxd
+      
       # languages
       python3
       ruby
