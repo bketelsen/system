@@ -35,6 +35,7 @@
   environment = {
     systemPackages = with pkgs; [
       firefox-wayland 
+      chrome-gnome-shell
     ];
   };
   # Enable CUPS to print documents.
