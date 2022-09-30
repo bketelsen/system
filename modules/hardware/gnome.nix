@@ -36,7 +36,6 @@
     systemPackages = with pkgs; [
       firefox-wayland 
       chrome-gnome-shell
-      libgtop
     ];
   };
   # Enable CUPS to print documents.

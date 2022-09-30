@@ -100,6 +100,7 @@ in
           fpath+=~/.zfunc
         '';
         initExtra = ''
+          [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
           ${functions}
           ${lib.optionalString pkgs.stdenvNoCC.isDarwin ''
             if [[ -d /opt/homebrew ]]; then
