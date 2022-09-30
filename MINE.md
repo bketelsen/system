@@ -26,3 +26,7 @@ mac/linux workstation setup
 * [ ] NixOS System(s)
 * [ ] Cloud Instances
 * [ ] Development VM
+
+# Nixinate
+
+nix run .#apps.nixinate.kaitain
