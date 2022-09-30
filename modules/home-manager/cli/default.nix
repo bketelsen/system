@@ -99,6 +99,7 @@ in
           fpath+=~/.sd
           fpath+=~/.zfunc
         '';
+        # https://github.com/microsoft/vscode/issues/157611
         initExtra = ''
           [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
           ${functions}
