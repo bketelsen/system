@@ -2,7 +2,7 @@
 {
     virtualisation.oci-containers.containers = {
         ghost = {
-            image = "library/ghost:5.15";
+            image = "ghost:5.17";
             dependsOn = [ "db" ];
             environment = {
                 DATABASE_HOST = "db.example.com";
