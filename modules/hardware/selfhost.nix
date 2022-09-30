@@ -4,6 +4,7 @@
         db = {
             image = "mysql:8";
             ports = ["3306:3306"];
+            autoStart = true;
 
         };
         ghost = {
@@ -14,6 +15,7 @@
                 DATABASE_PORT = "3306";
             };
             ports = [ "2368:2368" ];
+            autoStart = true;
         };
 
     };
