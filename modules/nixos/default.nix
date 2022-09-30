@@ -51,7 +51,7 @@ fonts.fonts = with pkgs; [
       "${config.user.name}" = {
         isNormalUser = true;
         extraGroups =
-          [ "wheel" "networkmanager" "lxd" ]; # Enable ‘sudo’ for the user.
+          [ "wheel" "networkmanager" "lxd" "docker" ]; # Enable ‘sudo’ for the user.
         hashedPassword =
           "$6$9WbAMICpXIHb7uuw$cI3/9WhKFWN0/ATSfMwhpQVib5jVWgBmjMaAWgHcO33tvXWFpg2Pg.epG6gz0mhOgVn2vkYgNO.XepgAXIYBK.";
       };
