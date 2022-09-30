@@ -11,6 +11,7 @@
             ports = [ "2368:2368" ];
         };
         db = {
+            image = "library/mysql:8";
 
         };
     };
