@@ -5,7 +5,11 @@
             image = "mysql:8";
             ports = ["3306:3306"];
             autoStart = true;
-
+            environment = {
+                MYSQL_DATABASE = "ghost";
+                MYSQL_USER = "ghost";
+                MYSQL_PASSWORD = "gh0st";
+            };
         };
         ghost = {
             image = "ghost:5.17";
