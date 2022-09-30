@@ -144,7 +144,7 @@
           nixpkgs.lib.platforms.linux)
       );
       formatter.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixpkgs-fmt;
-      apps = nixinate.nixinate.x86_64-linux self;
+      apps = nixinate.nixinate.aarch64-darwin self;
       darwinConfigurations = {
         chapterhouse = mkDarwinConfig {
           extraModules = [
