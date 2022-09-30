@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 {
     virtualisation.oci-containers.containers = {
+        db = {
+            image = "mysql:8";
+            ports = ["3306:3306"];
+
+        };
         ghost = {
             image = "ghost:5.17";
             dependsOn = [ "db" ];
@@ -10,9 +15,6 @@
             };
             ports = [ "2368:2368" ];
         };
-        db = {
-            image = "mysql:8";
 
-        };
     };
 }
