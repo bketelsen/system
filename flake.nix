@@ -24,7 +24,7 @@
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     small.url = "github:nixos/nixpkgs/nixos-unstable-small";
-
+    nixinate.url = "github:matthewcroughan/nixinate";
 
     flake-compat = {
       url = "github:edolstra/flake-compat";
@@ -40,7 +40,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flake-utils, ... }:
+  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flake-utils, nixinate, ... }:
     let
       inherit (darwin.lib) darwinSystem;
       inherit (nixpkgs.lib) nixosSystem;
@@ -144,7 +144,7 @@
           nixpkgs.lib.platforms.linux)
       );
       formatter.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixpkgs-fmt;
-
+      apps = nixinate.nixinate.x86_64-linux self;
       darwinConfigurations = {
         chapterhouse = mkDarwinConfig {
           extraModules = [
@@ -171,6 +171,15 @@
         kaitain = mkNixosConfig {
           hardwareModules = [
             ./modules/hardware/kaitain.nix
+          {
+            _module.args.nixinate = {
+              host = "10.0.1.118";
+              sshUser = "bjk";
+              buildOn = "remote"; # valid args are "local" or "remote"
+              substituteOnTarget = true; # if buildOn is "local" then it will substitute on the target, "-s"
+              hermetic = false;
+            };
+          }
           ];
           extraModules = [
             ./profiles/personal.nix
