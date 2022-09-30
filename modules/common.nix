@@ -40,6 +40,8 @@
       git
       jq
 
+      firefox
+
       # helpful shell stuff
       bat
       fzf
