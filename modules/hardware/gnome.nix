@@ -32,7 +32,11 @@
     layout = "us";
     xkbVariant = "";
   };
-
+  environment = {
+    systemPackages = with pkgs; [
+      firefox-wayland 
+    ];
+  };
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
