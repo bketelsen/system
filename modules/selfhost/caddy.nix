@@ -6,7 +6,7 @@
         email = "bketelsen@gmail.com";
         virtualHosts = {
             "web.brian.dev" = {
-                xtraConfig = ''
+                extraConfig = ''
                     reverse_proxy 127.0.0.1:2368
                 '';
             };
