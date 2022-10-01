@@ -36,6 +36,7 @@
     systemPackages = with pkgs; [
       firefox-wayland 
       chrome-gnome-shell
+      microsoft-edge-beta
     ];
   };
   # Enable CUPS to print documents.
