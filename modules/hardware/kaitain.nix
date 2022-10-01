@@ -8,7 +8,8 @@
     [ 
         (modulesPath + "/installer/scan/not-detected.nix")
         ./gnome.nix
-        ./selfhost.nix
+        ../selfhost/caddy.nix
+        ../selfhost/ghost.nix
 
     ];
 

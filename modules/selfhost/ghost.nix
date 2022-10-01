@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 {
-    # caddy
-    services.caddy.enable = true;
     virtualisation.oci-containers.containers = {
         db = {
             image = "mysql:8";
@@ -13,6 +11,9 @@
                 MYSQL_ROOT_PASSWORD = "gh0st";
                 MYSQL_PASSWORD = "gh0st";
             };
+            volumes = [
+                 "ghost_data:/var/lib/mysql"
+            ];
         };
         ghost = {
             image = "ghost:5.17";
@@ -26,6 +27,9 @@
             };
             ports = [ "2368:2368" ];
             autoStart = true;
+            volumes = [
+                 "content:/var/lib/ghost/content"
+            ];
         };
 
     };

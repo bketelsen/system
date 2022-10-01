@@ -21,17 +21,9 @@
 
 
   virtualisation = {
-    lxd = {
-      enable = true;
-      zfsSupport = true;
-      recommendedSysctlSettings = true;
-    };
     lxc = {
       enable = true;
       lxcfs.enable = true;
-    };
-    docker = {
-      enable = true;
     };
   };
 
@@ -51,7 +43,7 @@ fonts.fonts = with pkgs; [
       "${config.user.name}" = {
         isNormalUser = true;
         extraGroups =
-          [ "wheel" "networkmanager" "lxd" "docker" ]; # Enable ‘sudo’ for the user.
+          [ "wheel" "networkmanager" "lxd" "podman" ]; # Enable ‘sudo’ for the user.
         hashedPassword =
           "$6$9WbAMICpXIHb7uuw$cI3/9WhKFWN0/ATSfMwhpQVib5jVWgBmjMaAWgHcO33tvXWFpg2Pg.epG6gz0mhOgVn2vkYgNO.XepgAXIYBK.";
       };
@@ -110,12 +102,5 @@ fonts.fonts = with pkgs; [
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
 
-
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
 
 }
