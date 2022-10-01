@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 {
+    # caddy
+    services.caddy.enable = true;
     virtualisation.oci-containers.containers = {
         db = {
             image = "mysql:8";
