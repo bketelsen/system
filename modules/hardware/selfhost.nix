@@ -8,6 +8,7 @@
             environment = {
                 MYSQL_DATABASE = "ghost";
                 MYSQL_USER = "ghost";
+                MYSQL_ROOT_PASSWORD = "gh0st";
                 MYSQL_PASSWORD = "gh0st";
             };
         };
