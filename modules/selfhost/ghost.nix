@@ -24,6 +24,7 @@
                 database__connection__user =  "ghost";
                 database__connection__password = "gh0st";
                 database__connection__database =  "ghost";
+                url = "https://web.brian.dev";
             };
             ports = [ "2368:2368" ];
             autoStart = true;
