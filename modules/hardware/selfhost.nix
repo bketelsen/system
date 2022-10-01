@@ -16,11 +16,11 @@
             image = "ghost:5.17";
             dependsOn = [ "db" ];
             environment = {
-                database__client: "mysql";
-                database__connection__host: "db";
-                database__connection__user: "ghost";
-                database__connection__password: "gh0st";
-                database__connection__database: "ghost";
+                database__client = "mysql";
+                database__connection__host = "db";
+                database__connection__user =  "ghost";
+                database__connection__password = "gh0st";
+                database__connection__database =  "ghost";
             };
             ports = [ "2368:2368" ];
             autoStart = true;
