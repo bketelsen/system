@@ -17,7 +17,7 @@
             dependsOn = [ "db" ];
             environment = {
                 database__client = "mysql";
-                database__connection__host = "db";
+                database__connection__host = "10.0.1.118";
                 database__connection__user =  "ghost";
                 database__connection__password = "gh0st";
                 database__connection__database =  "ghost";
