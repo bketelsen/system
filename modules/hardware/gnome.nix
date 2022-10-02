@@ -64,7 +64,7 @@ xdg = {
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
     ];
-    gtkUsePortal = true;
+    #gtkUsePortal = true;
   };
 };
   # Enable touchpad support (enabled default in most desktopManager).
