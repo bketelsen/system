@@ -17,6 +17,7 @@
   boot.initrd.kernelModules = [ ];
   
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [ "mitigations=off" ]; # yolo
 
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
