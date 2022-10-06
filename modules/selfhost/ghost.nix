@@ -12,7 +12,7 @@
                 MYSQL_PASSWORD = "gh0st";
             };
             volumes = [
-                 "ghost_data:/var/lib/mysql"
+                 "ghost_database:/var/lib/mysql"
             ];
         };
         ghost = {
@@ -29,7 +29,7 @@
             ports = [ "2368:2368" ];
             autoStart = true;
             volumes = [
-                 "content:/var/lib/ghost/content"
+                 "ghost_content:/var/lib/ghost/content"
             ];
         };
 
