@@ -12,11 +12,11 @@
                 MYSQL_PASSWORD = "gh0st";
             };
             volumes = [
-                 "ghost_database:/var/lib/mysql"
+                 "ghost_db:/var/lib/mysql"
             ];
         };
         ghost = {
-            image = "ghost:5.17.1";
+            image = "ghost:5.17";
             dependsOn = [ "db" ];
             environment = {
                 database__client = "mysql";
@@ -29,7 +29,7 @@
             ports = [ "2368:2368" ];
             autoStart = true;
             volumes = [
-                 "ghost_content:/var/lib/ghost/content"
+                 "ghost:/var/lib/ghost/content"
             ];
         };
 
