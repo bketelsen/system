@@ -16,7 +16,7 @@
             ];
         };
         ghost = {
-            image = "ghost:5.17";
+            image = "ghost:5.17.2";
             dependsOn = [ "db" ];
             environment = {
                 database__client = "mysql";
