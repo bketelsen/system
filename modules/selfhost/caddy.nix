@@ -20,6 +20,11 @@
                     reverse_proxy 127.0.0.1:8384
                 '';
             };
+            "code.brian.dev" = {
+                extraConfig = ''
+                    reverse_proxy 10.0.1.13:3000
+                '';
+            };
         };
     };
 }
