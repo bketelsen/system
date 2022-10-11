@@ -5,6 +5,17 @@
         enable = true;
         email = "bketelsen@gmail.com";
         virtualHosts = {
+            "brian.dev" = {
+                extraConfig = ''
+                    reverse_proxy 127.0.0.1:2368
+                '';
+            };
+
+            "www.brian.dev" = {
+                extraConfig = ''
+                    redir https://brian.dev{uri} permanent
+                '';
+            };
             "web.brian.dev" = {
                 extraConfig = ''
                     reverse_proxy 127.0.0.1:2368
