@@ -16,7 +16,7 @@
             ];
         };
         ghost = {
-            image = "ghost:5.17.2";
+            image = "ghost:5.18.0";
             dependsOn = [ "db" ];
             environmentFiles = [
                 /opt/ghost/ghost.env

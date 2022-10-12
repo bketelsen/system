@@ -44,7 +44,8 @@
       bat
       fzf
       ripgrep
-      
+      distrobox
+
       # languages
       python3
       ruby
