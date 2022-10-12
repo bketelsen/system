@@ -37,7 +37,7 @@ fonts.fonts = with pkgs; [
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
-    defaultUserShell = pkgs.zsh;
+    defaultUserShell = pkgs.bash;
     mutableUsers = false;
     users = {
       "${config.user.name}" = {
