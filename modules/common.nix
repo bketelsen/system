@@ -50,7 +50,6 @@
       python3
       ruby
 
-      xpra
     ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
