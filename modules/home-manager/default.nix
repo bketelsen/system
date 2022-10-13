@@ -71,9 +71,10 @@ in
         fd
         ffmpeg
         gawk
+        gcc
         git
         gnugrep
-        # gnupg
+        gnupg
         gnused
         google-cloud-sdk
         helmfile

@@ -7,11 +7,15 @@
       "https://nix-community.cachix.org"
       "https://bketelsen.cachix.org"
     ];
+    trusted-substituters = https://cache.floxdev.com?trusted=1;
+
 
     trusted-public-keys = [
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "bketelsen.cachix.org-1:AaIF4STP+add8jLkiLaGQf7anCFyeKOFgLcI5cQ4nIo="
+      cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= 
+      flox-store-public-0:8c/B+kjIaQ+BloCmNkRUKwaVPFWkriSAd0JJvuDu4F0=
     ];
   };
 
