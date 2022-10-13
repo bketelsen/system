@@ -73,7 +73,7 @@ in
         gawk
         git
         gnugrep
-        gnupg
+        # gnupg
         gnused
         google-cloud-sdk
         helmfile
