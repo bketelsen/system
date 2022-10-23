@@ -10,6 +10,7 @@
         ./gnome.nix
         ../selfhost/caddy.nix
         ../selfhost/ghost.nix
+        ../selfhost/wp.nix
 
     ];
 
