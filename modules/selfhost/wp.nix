@@ -12,4 +12,5 @@ services.wordpress.sites."localhost" = {
       serverAliases = [ "webservice5" "www.webservice5" ];
     };
   };
+  database.port = 3307;
 }
