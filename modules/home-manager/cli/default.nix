@@ -14,9 +14,6 @@ in
 {
   home.packages = [ pkgs.tree ];
   programs = {
-    ssh = {
-      enable = true;
-    };
 
     direnv = {
       enable = true;
