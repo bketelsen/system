@@ -91,12 +91,11 @@ in
         };
         shellAliases = aliases;
         initExtraBeforeCompInit = ''
-          fpath+=~/.sd
           fpath+=~/.zfunc
         '';
         # https://github.com/microsoft/vscode/issues/157611
         initExtra = ''
-          [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+          [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
           ${functions}
           ${lib.optionalString pkgs.stdenvNoCC.isDarwin ''
             if [[ -d /opt/homebrew ]]; then
