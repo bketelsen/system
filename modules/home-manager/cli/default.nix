@@ -9,6 +9,8 @@ let
     la = "${ls} -a";
     ll = "${ls} -la";
     lt = "${ls} -lat";
+    ci = "code-insiders";
+    cid = "code-insiders .";
   };
 in
 {
