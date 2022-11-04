@@ -91,7 +91,7 @@ in
         nix
         nixfmt
         nixpkgs-fmt
-        nodejs-16_x
+        nodejs-18_x
         openssh
         pandoc
         parallel
