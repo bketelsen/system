@@ -68,6 +68,7 @@ in
       shellAliases = aliases;
       initExtra = ''
         ${functions}
+        . <(flox activate)
       '';
     };
     nix-index.enable = true;
@@ -94,6 +95,7 @@ in
         shellAliases = aliases;
         initExtraBeforeCompInit = ''
           fpath+=~/.zfunc
+          . <(flox activate)
         '';
         # https://github.com/microsoft/vscode/issues/157611
         initExtra = ''
