@@ -32,7 +32,7 @@ in
 
   services.syncthing = {
 
-    enable = true;
+    enable = false;
     logDir = "${homeDir}/Library/Logs";
     homeDir = "${homeDir}";
   };
