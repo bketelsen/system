@@ -88,6 +88,7 @@ in
         mmv
         ncdu
         (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
+	neovim
         nix
         nixfmt
         nixpkgs-fmt
