@@ -85,6 +85,7 @@ in
         kubernetes-helm
         lazygit
         luajit
+        mcfly
         mmv
         ncdu
         (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
