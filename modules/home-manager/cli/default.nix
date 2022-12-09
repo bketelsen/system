@@ -106,6 +106,7 @@ in
               eval "$(/opt/homebrew/bin/brew shellenv)"
             fi
             path+=~/.node-packages/lib/bin
+            eval "$(mcfly init zsh)"
           ''}
           unset RPS1
         '';
