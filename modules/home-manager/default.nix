@@ -99,6 +99,7 @@ in
         parallel
         pkgs.coreutils-full
         pre-commit
+        python3
         neofetch
         nix-prefetch
         rclone
