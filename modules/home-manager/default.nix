@@ -78,6 +78,7 @@ in
         gnused
         google-cloud-sdk
         helmfile
+        home-manager
         htop
         httpie
         jq
