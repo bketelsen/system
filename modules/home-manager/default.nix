@@ -100,6 +100,7 @@ in
         pkgs.coreutils-full
         pre-commit
         python3
+        pip3
         neofetch
         nix-prefetch
         rclone
