@@ -141,7 +141,6 @@
           (system: {
             name = system;
             value = {
-              nixos = self.nixosConfigurations.beast.config.system.build.toplevel;
               server = self.homeConfigurations.server.activationPackage;
             };
           })
